@@ -1,0 +1,37 @@
+{
+  "name": "bs-css",
+  "version": "10.0.1",
+  "description": "BuckleScript bindings for emotion",
+  "license": "ISC",
+  "author": "Andreas Møller <andreas@sentia.ai>",
+  "maintainers": ["Hervé Giraud <giraud.contact@yahoo.fr>"],
+  "scripts": {
+    "build": "bsb -make-world",
+    "predev": "npm run build",
+    "dev": "parcel example/index.html",
+    "start": "bsb -make-world -w",
+    "test": "jest",
+    "testw": "jest --watchAll"
+  },
+  "keywords": [
+    "emotion",
+    "bucklescript",
+    "reason",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SentiaAnalytics/bs-css.git"
+  },
+  "dependencies": {
+    "bs-css-types": "^0.1.0",
+    "emotion": "^10.0.7"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.8",
+    "bs-platform": "^5.2.0",
+    "jest": "^24.7.1",
+    "parcel-bundler": "^1.12.3",
+    "reason-react": "^0.7.0"
+  }
+}

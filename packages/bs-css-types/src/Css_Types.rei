@@ -17,8 +17,8 @@ module Time: {
    */
   type t = [ | `s(float) | `ms(float)];
 
-  let s: float => [> | `s(float)];
-  let ms: float => [> | `ms(float)];
+  let s: float => [> t];
+  let ms: float => [> t];
 
   let toString: t => string;
 };
@@ -74,36 +74,36 @@ module Length: {
   ];
 
   /** Represents the width, or more precisely the advance measure, of the glyph "0" (zero, the Unicode character U+0030) in the element's font. */
-  let ch: float => [> | `ch(float)];
+  let ch: float => [> t];
   /** Represents the calculated font-size of the element. If used on the font-size property itself, it represents the inherited font-size of the element */
-  let em: float => [> | `em(float)];
+  let em: float => [> t];
   /** Represents the x-height of the element's font. On fonts with the "x" letter, this is generally the height of lowercase letters in the font; 1ex ≈ 0.5em in many fonts */
-  let ex: float => [> | `ex(float)];
+  let ex: float => [> t];
   /** Represents the font-size of the root element (typically <html>). When used within the root element font-size, it represents its initial value (a common browser default is 16px, but user-defined preferences may modify this) */
-  let rem: float => [> | `rem(float)];
+  let rem: float => [> t];
   /** Equal to 1% of the height of the viewport's initial containing block */
-  let vh: float => [> | `vh(float)];
+  let vh: float => [> t];
   /** Equal to 1% of the width of the viewport's initial containing block */
-  let vw: float => [> | `vw(float)];
+  let vw: float => [> t];
   /** Equal to the smaller of vw and vh */
-  let vmin: float => [> | `vmin(float)];
+  let vmin: float => [> t];
   /** Equal to the larger of vw and vh */
-  let vmax: float => [> | `vmax(float)];
+  let vmax: float => [> t];
   /** One pixel. For screen displays, it traditionally represents one device pixel (dot). However, for printers and high-resolution screens, one CSS pixel implies multiple device pixels. 1px = 1/96th of 1in */
-  let px: int => [> | `px(int)];
-  let pxFloat: float => [> | `pxFloat(float)];
+  let px: int => [> t];
+  let pxFloat: float => [> t];
   /** One centimeter. 1cm = 96px/2.54 */
-  let cm: float => [> | `cm(float)];
+  let cm: float => [> t];
   /** One millimeter. 1mm = 1/10th of 1cm */
-  let mm: float => [> | `mm(float)];
+  let mm: float => [> t];
   /** One inch. 1in = 2.54cm = 96px */
-  let inch: float => [> | `inch(float)];
+  let inch: float => [> t];
   /** One pica. 1pc = 12pt = 1/6th of 1in */
-  let pc: float => [> | `pc(float)];
+  let pc: float => [> t];
   /** One point. 1pt = 1/72nd of 1in */
-  let pt: int => [> | `pt(int)];
+  let pt: int => [> t];
   /** The value 0 */
-  let zero: [> | `zero];
+  let zero: [> t];
 
   let toString: t => string;
 };

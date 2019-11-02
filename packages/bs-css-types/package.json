@@ -1,0 +1,19 @@
+{
+  "name": "bs-css-types",
+  "version": "0.1.0",
+  "description": "css atomic types",
+  "keywords": ["css", "reason", "bucklescript"],
+  "licence": "ISC",
+  "author": "Hervé Giraud <giraud.contact@yahoo.fr>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SentiaAnalytics/bs-css.git"
+  },
+  "scripts": {
+    "build": "bsb -make-world",
+    "test": "echo bs-css-types"
+  },
+  "devDependencies": {
+    "bs-platform": "^5.2.0"
+  }
+}

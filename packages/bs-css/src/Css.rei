@@ -1176,19 +1176,19 @@ let unset: [> Types.Cascading.t];
 
 let pct: float => [> Types.Percentage.t];
 
-let ch: float => [> | `ch(float)];
-let cm: float => [> | `cm(float)];
-let em: float => [> | `em(float)];
-let ex: float => [> | `ex(float)];
-let mm: float => [> | `mm(float)];
-let pt: int => [> | `pt(int)];
-let px: int => [> | `px(int)];
-let pxFloat: float => [> | `pxFloat(float)];
-let rem: float => [> | `rem(float)];
-let vh: float => [> | `vh(float)];
-let vmin: float => [> | `vmin(float)];
-let vmax: float => [> | `vmax(float)];
-let zero: [> | `zero];
+let ch: float => [> Types.Length.t];
+let cm: float => [> Types.Length.t];
+let em: float => [> Types.Length.t];
+let ex: float => [> Types.Length.t];
+let mm: float => [> Types.Length.t];
+let pt: int => [> Types.Length.t];
+let px: int => [> Types.Length.t];
+let pxFloat: float => [> Types.Length.t];
+let rem: float => [> Types.Length.t];
+let vh: float => [> Types.Length.t];
+let vmin: float => [> Types.Length.t];
+let vmax: float => [> Types.Length.t];
+let zero: [> Types.Length.t];
 
 let deg: float => Types.Angle.t;
 let rad: float => Types.Angle.t;

@@ -4,6 +4,9 @@
     "react-jsx": 3
   },
   "refmt": 3,
+  "bs-dependencies": [
+    "bs-css-types"
+  ],
   "bs-dev-dependencies": [
     "reason-react", "@glennsl/bs-jest"
   ],
